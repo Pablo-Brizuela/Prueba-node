@@ -48,5 +48,5 @@ const DBZ = {
         
 //DBZ.venderCelular("GALAXYA03")
 //console.log(DBZ.celulares)
-//console.log(DBZ.listaDeVentas())
+console.log(DBZ.listaDeVentas())
 console.log(DBZ.totalDeVentas())
