@@ -1,4 +1,4 @@
-celulares = [
+const celulares = [
   { marca: "Motorola",
     modelo: "Moto g51",
     precio: 150000,
@@ -7,7 +7,7 @@ celulares = [
     cuotas: 12,
     anio: 2021,
     codigo: "MOTOG51",
-    vendido: false
+    vendido: true
 
 },
 
@@ -19,7 +19,7 @@ celulares = [
     cuotas: 14,
     anio: 2019,
     codigo: "GALAXYA03",
-    vendido: false
+    vendido: true
 
 }
 ];

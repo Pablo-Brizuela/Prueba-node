@@ -27,9 +27,26 @@ const DBZ = {
         const ventas = this.celularesParaLaVenta()
         const celularesHoras = ventas.filter(elemento => elemento.horas < 50)
         return  celularesHoras
+    },
+    listaDeVentas:  function(){
+       const vendidos = this.celulares.filter(celular => celular.vendido === true)
+       const precios = vendidos.map(celular => celular.precio) 
+       return precios
+
+    },
+
+    totalDeVentas: function(){
+       const precios = this.listaDeVentas()
+       const total = precios.reduce((acumulador, elemento) => acumulador + elemento) 
+       return total
     }
+
+ 
+
 
 }
         
-DBZ.venderCelular("GALAXYA03")
-console.log(DBZ.celulares)
+//DBZ.venderCelular("GALAXYA03")
+//console.log(DBZ.celulares)
+//console.log(DBZ.listaDeVentas())
+console.log(DBZ.totalDeVentas())
